@@ -11,7 +11,7 @@ export const Home = () => {
   return (
     <div className='home-component-container'>
             <div className='home-center-info-title'>
-                Soy Miguel Montejano
+            <b>Soy Miguel</b> Montejano
             </div>
             <div className='home-center-info-subtitle'>
                 Soy un <b>Diseñador UX/UI y Desarrollador Frontend</b> ubicado en Madrid con dos años de experiencia en el diseño y desarrollo de sitios webs modernos a la par que usables.
