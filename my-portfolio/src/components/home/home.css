@@ -21,7 +21,7 @@
 }
 
 .home-component-container .home-center-info-title b {
-    color: #BF0226;
+    color: var(--main-red);
 }
 
 .home-component-container .home-center-info-subtitle {
@@ -34,7 +34,7 @@
 
 .home-component-container .home-center-info-subtitle b {
     font-weight: 500;
-    color: #BF0226;
+    color: var(--main-red);;
 }
 
 .home-component-container .home-center-separator {

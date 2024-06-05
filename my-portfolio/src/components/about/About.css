@@ -1,0 +1,84 @@
+.about-component-container {
+    height: 100vh;
+    width: 100vw;
+    background: #11161d;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-component-container .flip-square {
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    cursor: crosshair;
+}
+
+.about-component-container .flip-square-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease-out;
+    transform-style: preserve-3d;
+}
+
+.about-component-container .flip-square:hover .flip-square-inner {
+    transform: rotateY(180deg);
+}
+
+.about-component-container .profile-img, .about-component-container .flip-square-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.about-component-container .profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid var(--main-red);
+
+}
+
+.about-component-container .profile-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../imgs/profileImg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+
+}
+
+.about-component-container .flip-square-back {
+    background-color: blue;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+    border: 2px solid var(--main-red);
+}
+
+.about-component-container .profile-info {
+    width: 50%;
+    color: white;
+    font-size: 14px;
+    font-family: "Roboto Slab", serif;
+    text-align: justify;
+}
+
+.about-component-container .profile-info p {
+    margin-top: 15px;
+}
